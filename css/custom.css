@@ -149,3 +149,43 @@ body {
     text-align: center;
   }
 }
+/* About section styling */
+section.about {
+  background: #1fa4b6;
+  color: white;
+}
+section.about hr.star-light:after {
+  background-color: #1fa4b6;
+}
+/* Solution styling */
+section.solution {
+  background: #2C3E50;
+  color: white;
+}
+section.solution hr.star-light:after {
+  background-color: #2C3E50;
+}
+section.solution .solution_table {
+  display: table;
+}
+section.solution .solution_table .row {
+  display: table-row;
+}
+section.solution .solution_table .row .step-img,
+section.solution .solution_table .row .middle {
+  display: table-cell;
+}
+section.solution .solution_table .row img {
+  width: 100%;
+  height: 100%;
+}
+section.solution .solution_table .row .middle {
+  padding-top: 80px;
+  vertical-align: middle;
+  text-align: center;
+}
+/* Contact form adjustments */
+#contactForm input,
+#contactForm textarea {
+  border-bottom: 1px solid #2C3E50;
+}

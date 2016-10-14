@@ -98,7 +98,11 @@ gulp.task('browserSync', function() {
 		server: {
 			baseDir: ''
 		},
-	})
+	});
+	
+	gulp.watch("less/*", ['less', 'minify-css']);
+	gulp.watch("js/*", ['minify-js']);
+	gulp.watch("app/*.html").on('change', browserSync.reload);
 })
 
 // Dev task with browserSync
