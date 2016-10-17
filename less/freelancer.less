@@ -4,14 +4,16 @@
 body {
 	font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	overflow-x: hidden;
+	//background: #f1f1fa;
+	background: @background-color;
 }
 
 p {
-	font-size: 20px;
+	font-size: 18px;
 }
 
 p.small {
-	font-size: 16px;
+	font-size: 14px;
 }
 
 a,
@@ -64,7 +66,8 @@ hr.star-primary {
 }
 
 hr.star-primary:after {
-    background-color: #f1f1fa;
+    //background-color: #f1f1fa;
+    background-color: @background-color;
     color: @theme-primary;
 }
 
@@ -277,7 +280,7 @@ section.success {
     position: relative;
     margin-bottom: 0;
     padding-bottom: 0.5em;
-    border-bottom: 1px solid @gray-lighter;
+    //border-bottom: 1px solid @gray-lighter;
     input,
     textarea {
 	    z-index: 1;
@@ -327,7 +330,7 @@ section.success {
 }
 
 form .row:first-child .floating-label-form-group {
-    border-top: 1px solid @gray-lighter;
+    //border-top: 1px solid @gray-lighter;
 }
 
 footer {

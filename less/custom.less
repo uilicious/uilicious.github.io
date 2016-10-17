@@ -1,216 +1,243 @@
 @import "variables.less";
 @import "mixins.less";
 
-header {
-	background: @theme-success;
-	
-	.container {
-		padding-top: 100px;
-	}
-	
-	.img-responsive {
-		padding-bottom:0px;
-		margin-bottom:0px;
-		width:100%;
-		max-width:512px;
-	}
-	
-	.star-light::after {
-		background-color: @theme-success;
-	}
+// UTILITIES
+
+.bg-success {
+  background-color: @theme-success !important;
 }
 
-body {
-	background: #f1f1fa;
+.bg-primary {
+  background-color: @theme-primary !important;
+}
+
+.bg-white {
+  background-color: #FFFFFF !important;
+}
+
+.f-success {
+  color: @theme-success !important;
+}
+
+.f-accent {
+  color: @theme-accent !important;
+}
+
+//
+pre {
+  background-color: #1a242f;
+  border: none;
+  color: white;
+}
+
+//
+
+header {
+  background: @theme-success;
+
+  .container {
+    padding-top: 100px;
+  }
+
+  .img-responsive {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .star-light::after {
+    background-color: @theme-success;
+  }
 }
 
 #timeline {
-	/** Timeline specific styling - see : http://codepen.io/kjohnson/pen/azBvaE?editors=1100 */
-	
-	@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
-	
-	*, *:before, *:after {
-		box-sizing: inherit;
-	}
-	
-	.steps-section {
-		padding-left: 20px;
-		padding-right: 20px;
-	}
-	
-	.section-header, .steps-header, .steps-name {
-		color: #3498DB;
-		font-weight: 400;
-		font-size: 1.4em;
-	}
-	
-	h3.steps-name {
-		margin-top:20px;
-		margin-bottom:10px;
-	}
-	.steps-description {
-		font-size: 1.2em;
-	}
-	
-	.steps-header {
-		margin-bottom: 20px;
-		text-align: center;
-	}
-	
-	.steps-timeline {
-		outline: 1px dashed rgba(255, 0, 0, 0);
-	}
-	@media screen and (max-width: 500px) {
-		.steps-timeline {
-			border-left: 2px solid #3498DB;
-			margin-left: 25px;
-		}
-	}
-	@media screen and (min-width: 500px) {
-		.steps-timeline {
-			border-top: 2px solid #3498DB;
-			padding-top: 20px;
-			margin-top: 40px;
-			margin-left: 16.65%;
-			margin-right: 16.65%;
-		}
-	}
-	.steps-timeline:after {
-		content: "";
-		display: table;
-		clear: both;
-	}
-	
-	.steps-one,
-	.steps-two,
-	.steps-three {
-		outline: 1px dashed rgba(0, 128, 0, 0);
-	}
-	@media screen and (max-width: 500px) {
-		.steps-one,
-		.steps-two,
-		.steps-three {
-			margin-left: -25px;
-		}
-	}
-	@media screen and (min-width: 500px) {
-		.steps-one,
-		.steps-two,
-		.steps-three {
-			float: left;
-			width: 33%;
-			margin-top: -50px;
-		}
-	}
-	
-	@media screen and (max-width: 500px) {
-		.steps-one,
-		.steps-two {
-			padding-bottom: 40px;
-		}
-	}
-	
-	@media screen and (min-width: 500px) {
-		.steps-one {
-			margin-left: -16.65%;
-			margin-right: 16.65%;
-		}
-	}
-	
-	@media screen and (max-width: 500px) {
-		.steps-three {
-			margin-bottom: -100%;
-		}
-	}
-	@media screen and (min-width: 500px) {
-		.steps-three {
-			margin-left: 16.65%;
-			margin-right: -16.65%;
-		}
-	}
-	
-	.steps-img {
-		display: block;
-		margin: auto;
-		width: 50px;
-		height: 50px;
-		border-radius: 50%;
-	}
-	@media screen and (max-width: 500px) {
-		.steps-img {
-			float: left;
-			margin-right: 20px;
-		}
-	}
-	
-	.steps-name,
-	.steps-description {
-		margin: 0;
-	}
-	
-	@media screen and (min-width: 500px) {
-		.steps-name {
-			text-align: center;
-		}
-	}
-	
-	.steps-description {
-		overflow: hidden;
-	}
-	@media screen and (min-width: 500px) {
-		.steps-description {
-			text-align: center;
-		}
-	}
+  /** Timeline specific styling - see : http://codepen.io/kjohnson/pen/azBvaE?editors=1100 */
+
+  @import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  .steps-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .section-header, .steps-header, .steps-name {
+    color: #3498DB;
+    font-weight: 400;
+    font-size: 1.4em;
+  }
+
+  h3.steps-name {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .steps-description {
+    font-size: 1.2em;
+  }
+
+  .steps-header {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .steps-timeline {
+    outline: 1px dashed rgba(255, 0, 0, 0);
+  }
+  @media screen and (max-width: 500px) {
+    .steps-timeline {
+      border-left: 2px solid #3498DB;
+      margin-left: 25px;
+    }
+  }
+  @media screen and (min-width: 500px) {
+    .steps-timeline {
+      border-top: 2px solid #3498DB;
+      padding-top: 20px;
+      margin-top: 40px;
+      margin-left: 16.65%;
+      margin-right: 16.65%;
+    }
+  }
+  .steps-timeline:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .steps-one,
+  .steps-two,
+  .steps-three {
+    outline: 1px dashed rgba(0, 128, 0, 0);
+  }
+  @media screen and (max-width: 500px) {
+    .steps-one,
+    .steps-two,
+    .steps-three {
+      margin-left: -25px;
+    }
+  }
+  @media screen and (min-width: 500px) {
+    .steps-one,
+    .steps-two,
+    .steps-three {
+      float: left;
+      width: 33%;
+      margin-top: -50px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .steps-one,
+    .steps-two {
+      padding-bottom: 40px;
+    }
+  }
+
+  @media screen and (min-width: 500px) {
+    .steps-one {
+      margin-left: -16.65%;
+      margin-right: 16.65%;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .steps-three {
+      margin-bottom: -100%;
+    }
+  }
+  @media screen and (min-width: 500px) {
+    .steps-three {
+      margin-left: 16.65%;
+      margin-right: -16.65%;
+    }
+  }
+
+  .steps-img {
+    display: block;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  @media screen and (max-width: 500px) {
+    .steps-img {
+      float: left;
+      margin-right: 20px;
+    }
+  }
+
+  .steps-name,
+  .steps-description {
+    margin: 0;
+  }
+
+  @media screen and (min-width: 500px) {
+    .steps-name {
+      text-align: center;
+    }
+  }
+
+  .steps-description {
+    overflow: hidden;
+  }
+  @media screen and (min-width: 500px) {
+    .steps-description {
+      text-align: center;
+    }
+  }
 }
 
 /* About section styling */
 section.about {
-	background: @theme-success;
-	color:white;
-	
-	hr.star-light:after {
-		background-color:@theme-success;
-	}
+  background: @theme-success;
+  color: white;
+
+  hr.star-light:after {
+    background-color: @theme-success;
+  }
 }
 
 /* Solution styling */
 section.solution {
-	background: @theme-primary;
-	color:white;
-	
-	hr.star-light:after {
-		background-color:@theme-primary;
-	}
-	
-	.solution_table {
-		display:table;
-		
-		.row {
-			display: table-row;
-			
-			.step-img, .middle {
-				display:table-cell;
-			}
-			
-			img {
-				width:100%;
-				height:100%;
-			}
-			
-			.middle {
-				padding-top:80px;
-				vertical-align:middle;
-				text-align:center;
-			}
-		} 
-		
-	}
+  //background: @theme-primary;
+  color: white;
+
+  hr.star-light:after {
+    background-color: @theme-primary;
+  }
+
+  .solution_table {
+    display: table;
+
+    .row {
+      display: table-row;
+
+      .step-img, .middle {
+        display: table-cell;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .middle {
+        padding-top: 80px;
+        vertical-align: middle;
+        text-align: center;
+      }
+    }
+
+  }
 }
 
 /* Contact form adjustments */
 #contactForm {
-	input, textarea {
-		border-bottom: 1px solid @theme-primary;
-	}
+  input, textarea {
+    border-bottom: 1px solid #E0E0E0;
+  }
 }

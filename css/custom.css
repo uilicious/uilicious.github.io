@@ -1,8 +1,23 @@
-/*!
- * Start Bootstrap - Freelancer v3.3.7+1 (http://startbootstrap.com/template-overviews/freelancer)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
+.bg-success {
+  background-color: #1fa4b6 !important;
+}
+.bg-primary {
+  background-color: #2C3E50 !important;
+}
+.bg-white {
+  background-color: #FFFFFF !important;
+}
+.f-success {
+  color: #1fa4b6 !important;
+}
+.f-accent {
+  color: #E05B49 !important;
+}
+pre {
+  background-color: #1a242f;
+  border: none;
+  color: white;
+}
 header {
   background: #1fa4b6;
 }
@@ -13,13 +28,10 @@ header .img-responsive {
   padding-bottom: 0px;
   margin-bottom: 0px;
   width: 100%;
-  max-width: 512px;
+  max-width: 320px;
 }
 header .star-light::after {
   background-color: #1fa4b6;
-}
-body {
-  background: #f1f1fa;
 }
 #timeline {
   /** Timeline specific styling - see : http://codepen.io/kjohnson/pen/azBvaE?editors=1100 */
@@ -159,7 +171,6 @@ section.about hr.star-light:after {
 }
 /* Solution styling */
 section.solution {
-  background: #2C3E50;
   color: white;
 }
 section.solution hr.star-light:after {
@@ -187,5 +198,5 @@ section.solution .solution_table .row .middle {
 /* Contact form adjustments */
 #contactForm input,
 #contactForm textarea {
-  border-bottom: 1px solid #2C3E50;
+  border-bottom: 1px solid #E0E0E0;
 }
