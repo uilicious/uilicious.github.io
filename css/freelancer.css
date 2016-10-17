@@ -1,17 +1,13 @@
-/*!
- * Start Bootstrap - Freelancer v3.3.7+1 (http://startbootstrap.com/template-overviews/freelancer)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
+  background: #ECEFF1;
 }
 p {
-  font-size: 20px;
+  font-size: 18px;
 }
 p.small {
-  font-size: 16px;
+  font-size: 14px;
 }
 a,
 a:hover,
@@ -61,7 +57,7 @@ hr.star-primary {
   border-color: #2C3E50;
 }
 hr.star-primary:after {
-  background-color: #f1f1fa;
+  background-color: #ECEFF1;
   color: #2C3E50;
 }
 .img-centered {
@@ -249,7 +245,6 @@ section.success {
   position: relative;
   margin-bottom: 0;
   padding-bottom: 0.5em;
-  border-bottom: 1px solid #eeeeee;
 }
 .floating-label-form-group input,
 .floating-label-form-group textarea {
@@ -290,9 +285,6 @@ section.success {
 }
 .floating-label-form-group-with-focus label {
   color: #1fa4b6;
-}
-form .row:first-child .floating-label-form-group {
-  border-top: 1px solid #eeeeee;
 }
 footer {
   color: white;

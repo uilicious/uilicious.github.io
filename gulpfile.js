@@ -90,7 +90,7 @@ gulp.task('copy', function() {
 })
 
 // Run everything
-gulp.task('default', ['less', 'minify-css', 'minify-js', 'copy']);
+gulp.task('default', ['less', 'minify-css', 'minify-js', 'copy', 'browserSync']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
@@ -98,7 +98,11 @@ gulp.task('browserSync', function() {
 		server: {
 			baseDir: ''
 		},
-	})
+	});
+	
+	gulp.watch("less/*", ['less', 'minify-css']);
+	gulp.watch("js/*", ['minify-js']);
+	gulp.watch("app/*.html").on('change', browserSync.reload);
 })
 
 // Dev task with browserSync

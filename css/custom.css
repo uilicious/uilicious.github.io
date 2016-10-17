@@ -1,8 +1,23 @@
-/*!
- * Start Bootstrap - Freelancer v3.3.7+1 (http://startbootstrap.com/template-overviews/freelancer)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
+.bg-success {
+  background-color: #1fa4b6 !important;
+}
+.bg-primary {
+  background-color: #2C3E50 !important;
+}
+.bg-white {
+  background-color: #FFFFFF !important;
+}
+.f-success {
+  color: #1fa4b6 !important;
+}
+.f-accent {
+  color: #E05B49 !important;
+}
+pre {
+  background-color: #1a242f;
+  border: none;
+  color: white;
+}
 header {
   background: #1fa4b6;
 }
@@ -13,13 +28,10 @@ header .img-responsive {
   padding-bottom: 0px;
   margin-bottom: 0px;
   width: 100%;
-  max-width: 512px;
+  max-width: 320px;
 }
 header .star-light::after {
   background-color: #1fa4b6;
-}
-body {
-  background: #f1f1fa;
 }
 #timeline {
   /** Timeline specific styling - see : http://codepen.io/kjohnson/pen/azBvaE?editors=1100 */
@@ -148,4 +160,43 @@ body {
   #timeline .steps-description {
     text-align: center;
   }
+}
+/* About section styling */
+section.about {
+  background: #1fa4b6;
+  color: white;
+}
+section.about hr.star-light:after {
+  background-color: #1fa4b6;
+}
+/* Solution styling */
+section.solution {
+  color: white;
+}
+section.solution hr.star-light:after {
+  background-color: #2C3E50;
+}
+section.solution .solution_table {
+  display: table;
+}
+section.solution .solution_table .row {
+  display: table-row;
+}
+section.solution .solution_table .row .step-img,
+section.solution .solution_table .row .middle {
+  display: table-cell;
+}
+section.solution .solution_table .row img {
+  width: 100%;
+  height: 100%;
+}
+section.solution .solution_table .row .middle {
+  padding-top: 80px;
+  vertical-align: middle;
+  text-align: center;
+}
+/* Contact form adjustments */
+#contactForm input,
+#contactForm textarea {
+  border-bottom: 1px solid #E0E0E0;
 }
