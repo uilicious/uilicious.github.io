@@ -13,6 +13,18 @@
 .f-accent {
   color: #E05B49 !important;
 }
+#mainNav .navbar-brand .navbar-brand-logo {
+  height: 2rem;
+  width: auto;
+  -webkit-transition: width 300ms ease-in-out, height 300ms ease-in-out;
+  -moz-transition: width 300ms ease-in-out, height 300ms ease-in-out;
+  -o-transition: width 300ms ease-in-out, height 300ms ease-in-out;
+  transition: width 300ms ease-in-out, height 300ms ease-in-out;
+}
+#mainNav.affix-top .navbar-brand .navbar-brand-logo {
+  height: 2.5rem;
+  width: auto;
+}
 pre {
   background-color: #1a242f;
   border: none;
