@@ -363,8 +363,16 @@
                     </div>
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Message (Optional)</label>
-                            <textarea rows="5" class="form-control" placeholder="Message (Optional)" id="message"
+                            <label>Contact Number</label>
+                            <input name="contact_num" type="text" class="form-control" placeholder="Contact Number" id="contact_num"
+                                   required data-validation-required-message="Please enter your contact number.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Tell us about you and your work</label>
+                            <textarea rows="5" class="form-control" placeholder="Tell us about you and your work" id="message"
                                       name="message"
                                       data-validation-required-message="Please enter a message."></textarea>
                             <p class="help-block text-danger"></p>
