@@ -25,10 +25,16 @@
   height: 2.5rem;
   width: auto;
 }
-pre {
+pre.code {
   background-color: #1a242f;
   border: none;
   color: white;
+}
+pre.address {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 header {
   background: #1fa4b6;
