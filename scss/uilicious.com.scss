@@ -138,50 +138,51 @@ $scale: (
 }
 
 // Sections
-.hero-section {
+#hero-section {
   background-color: $color-primary;
   color: $white;
 }
 
 // Features Section
-.features-section {
+#features-section {
   background-color: $white;
   //text-align: center;
-}
 
-.code-wrapper{
-  max-width: 350px;
-  //margin: 0 auto;
-}
+  .code-wrapper{
+    max-width: 350px;
+    //margin: 0 auto;
+  }
 
-.code{
-  background-color: $gray-dark-2;
-  color: white;
-  border-radius: 5px;
-}
+  .code{
+    background-color: $gray-dark-2;
+    color: white;
+    border-radius: 5px;
+  }
 
-.code-text-a{
-  color: $color-primary;
-}
+  .code-text-a{
+    color: $color-primary;
+  }
 
-.code-text-b{
-  color: $color-accent
-}
+  .code-text-b{
+    color: $color-accent
+  }
 
-#react-icon, #vuejs-icon, #angular-icon {
-  height: 64px;
-  width:  64px;
-  margin: 0 .5rem;
-}
+  .framework-icon {
+    height: 64px;
+    width:  64px;
+    margin: 0 .5rem;
+  }
 
-.browser-icon{
-  height: 64px;
-  width:  64px;
-  margin: 0 .5rem;
+  .browser-icon{
+    height: 64px;
+    width:  64px;
+    margin: 0 .5rem;
+  }
+
 }
 
 // Registration section
-.register-section {
+#register-section {
   background-color: $gray-light-4;
 }
 
@@ -203,7 +204,7 @@ $scale: (
 }
 
 // Footer section
-.footer-section {
+#footer-section {
 
   background-color: $color-primary-dark;
   color: $white;
@@ -227,7 +228,7 @@ $scale: (
 }
 
 // Copyright section
-.copyright-section {
+#copyright-section {
 
   background-color: $gray-dark-2;
   color: $white;

@@ -350,38 +350,32 @@ a {
 .site-navbar {
   background-color: #2D3332; }
 
-.hero-section {
+#hero-section {
   background-color: #40D1B1;
   color: #FFFFFF; }
 
-.features-section {
+#features-section {
   background-color: #FFFFFF; }
+  #features-section .code-wrapper {
+    max-width: 350px; }
+  #features-section .code {
+    background-color: #2D3332;
+    color: white;
+    border-radius: 5px; }
+  #features-section .code-text-a {
+    color: #40D1B1; }
+  #features-section .code-text-b {
+    color: #F6A623; }
+  #features-section .framework-icon {
+    height: 64px;
+    width: 64px;
+    margin: 0 .5rem; }
+  #features-section .browser-icon {
+    height: 64px;
+    width: 64px;
+    margin: 0 .5rem; }
 
-.code-wrapper {
-  max-width: 350px; }
-
-.code {
-  background-color: #2D3332;
-  color: white;
-  border-radius: 5px; }
-
-.code-text-a {
-  color: #40D1B1; }
-
-.code-text-b {
-  color: #F6A623; }
-
-#react-icon, #vuejs-icon, #angular-icon {
-  height: 64px;
-  width: 64px;
-  margin: 0 .5rem; }
-
-.browser-icon {
-  height: 64px;
-  width: 64px;
-  margin: 0 .5rem; }
-
-.register-section {
+#register-section {
   background-color: #F8FBF9; }
 
 #register-name-input {
@@ -393,22 +387,22 @@ a {
 #register-phone-input {
   max-width: 150px; }
 
-.footer-section {
+#footer-section {
   background-color: #2BB395;
   color: #FFFFFF; }
-  .footer-section h1, .footer-section h2, .footer-section h3, .footer-section h4, .footer-section h5, .footer-section h6 {
+  #footer-section h1, #footer-section h2, #footer-section h3, #footer-section h4, #footer-section h5, #footer-section h6 {
     color: #FFFFFF; }
-  .footer-section a {
+  #footer-section a {
     color: #FFFFFF; }
-  .footer-section .text-highlight {
+  #footer-section .text-highlight {
     color: #57FFDA; }
-  .footer-section .text-underline--dotted {
+  #footer-section .text-underline--dotted {
     border-bottom-color: #FFFFFF; }
 
-.copyright-section {
+#copyright-section {
   background-color: #2D3332;
   color: #FFFFFF; }
-  .copyright-section a {
+  #copyright-section a {
     color: #FFFFFF; }
 
 /*# sourceMappingURL=uilicious.com.css.map */
