@@ -358,8 +358,7 @@ a {
   background-color: #FFFFFF; }
 
 .code-wrapper {
-  max-width: 350px;
-  margin: 0 auto; }
+  max-width: 350px; }
 
 .code {
   background-color: #2D3332;
@@ -373,8 +372,13 @@ a {
   color: #F6A623; }
 
 #react-icon, #vuejs-icon, #angular-icon {
-  height: 80px;
-  width: 80px;
+  height: 64px;
+  width: 64px;
+  margin: 0 .5rem; }
+
+.browser-icon {
+  height: 64px;
+  width: 64px;
   margin: 0 .5rem; }
 
 .register-section {
