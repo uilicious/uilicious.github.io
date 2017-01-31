@@ -1,0 +1,232 @@
+//--------------------------------------------------
+// Variables
+//--------------------------------------------------
+
+//
+// Colors
+//
+
+// Primary colors
+
+// Grays
+$white: #FFFFFF; // background
+$gray-light-4: #F8FBF9; // background
+$gray-light-3: #EBEEEE; // section
+$gray-light-2: #D5DCDA;
+$gray-light-1: #B5BBBA;
+$gray: #7C8381; // muted text
+$gray-dark-1: #454D4B; // borders
+$gray-dark-2: #2D3332; // navbar
+$black: #000; // normal text
+
+// Brand color
+$color-primary-dark: #2BB395;
+$color-primary: #40D1B1;
+$color-primary-light: #50E3C2;
+$color-primary-lighter: #BDF9EB;
+
+$color-accent: #F6A623;
+
+//
+$navbar-background-color: $gray-dark-2;
+
+//--------------------------------------------------
+// Fonts
+//--------------------------------------------------
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oswald", "Helvetica Neue", Arial, sans-serif;
+}
+
+a {
+  color: $color-primary-dark;
+}
+
+.text-primary-dark {
+  color: $color-primary-dark;
+}
+
+.text-accent {
+  color: $color-accent
+}
+
+.text-underline--dotted {
+  border-bottom: 1px dotted $color-primary;
+  &,
+  &:hover, &.hover,
+  &:focus,
+  &:active, &.active {
+    text-decoration: none;
+  }
+}
+
+//--------------------------------------------------
+// Spaces
+//--------------------------------------------------
+
+$scale: (
+        "xxxs": 0.25rem,
+        "xxs": 0.5rem,
+        "xs": 1rem,
+        "s": 1.5rem,
+        "m": 2rem,
+        "l": 4rem,
+        "xl": 8rem
+);
+
+@each $label, $size in ($scale) {
+
+  //--------------------------------------------------
+  // Margins and Paddings
+  //--------------------------------------------------
+  @each $prop, $abbrev in (margin: m, padding: p) {
+    .#{$abbrev}t-#{$label} {
+      #{$prop}-top: $size;
+    }
+    .#{$abbrev}l-#{$label} {
+      #{$prop}-left: $size;
+    }
+    .#{$abbrev}b-#{$label} {
+      #{$prop}-bottom: $size;
+    }
+    .#{$abbrev}r-#{$label} {
+      #{$prop}-right: $size;
+    }
+    .#{$abbrev}x-#{$label} {
+      #{$prop}-left: $size;
+      #{$prop}-right: $size;
+    }
+    .#{$abbrev}y-#{$label} {
+      #{$prop}-top: $size;
+      #{$prop}-bottom: $size;
+    }
+    .#{$abbrev}-#{$label} {
+      #{$prop}: $size;
+    }
+  }
+
+}
+
+//--------------------------------------------------
+// Site
+//--------------------------------------------------
+
+// Site
+.site {
+
+  display: flex;
+  flex-direction: column;
+
+  height: 100vh;
+  overflow-y: hidden;
+
+}
+
+.site-header {
+
+}
+
+.site-content {
+
+  flex: 1;
+  overflow-y: auto;
+
+}
+
+// Site navbar
+.site-navbar {
+  background-color: $navbar-background-color;
+}
+
+// Sections
+.hero-section {
+  background-color: $color-primary;
+  color: $white;
+}
+
+// Features Section
+.features-section {
+  background-color: $white;
+}
+
+.code-wrapper{
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.code{
+  background-color: $gray-dark-2;
+  color: white;
+  border-radius: 5px;
+}
+
+.code-text-a{
+  color: $color-primary;
+}
+
+.code-text-b{
+  color: $color-accent
+}
+
+#react-icon, #vuejs-icon, #angular-icon {
+  height: 80px;
+  width:  80px;
+  margin: 0 .5rem;
+}
+
+// Registration section
+.register-section {
+  background-color: $gray-light-4;
+}
+
+// Registration form
+#register-name-input {
+  max-width: 300px;
+}
+
+#register-email-input {
+  max-width: 300px;
+}
+
+#register-phone-input {
+  max-width: 150px;
+}
+
+#register-message-input {
+
+}
+
+// Footer section
+.footer-section {
+
+  background-color: $color-primary-dark;
+  color: $white;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $white;
+  }
+
+  a {
+    color: $white;
+  }
+
+  .text-highlight {
+    color: #57FFDA;
+  }
+
+  .text-underline--dotted {
+    border-bottom-color: $white;
+  }
+
+}
+
+// Copyright section
+.copyright-section {
+
+  background-color: $gray-dark-2;
+  color: $white;
+
+  a {
+    color: $white;
+  }
+
+}
