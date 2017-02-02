@@ -1,0 +1,18 @@
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+
+$gray-dark:                 #2D3332;
+$gray:                      #454D4B;
+$gray-light:                #7C8381;
+$gray-lighter:              #EBEEEE;
+$gray-lightest:             #F8FBF9;
+
+$brand-primary:             #40D1B1;
+
+$color-accent: #D058D9;
+
+$btn-secondary-color:            white !default;
+$btn-secondary-bg:               $color-accent !default;
+$btn-secondary-border:           $color-accent !default;
