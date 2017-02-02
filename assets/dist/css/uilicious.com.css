@@ -372,10 +372,18 @@ a {
     height: 64px;
     width: 64px;
     margin: 0 .5rem; }
+    @media (max-width: 576px) {
+      #home-page-features-section .framework-icon {
+        height: 48px;
+        width: 48px; } }
   #home-page-features-section .browser-icon {
     height: 64px;
     width: 64px;
     margin: 0 .5rem; }
+    @media (max-width: 576px) {
+      #home-page-features-section .browser-icon {
+        height: 48px;
+        width: 48px; } }
 
 #home-page-register-section {
   background-color: #F8FBF9; }
