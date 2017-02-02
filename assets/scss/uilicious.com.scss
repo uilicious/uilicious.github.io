@@ -138,51 +138,51 @@ $scale: (
 }
 
 // Sections
-#hero-section {
+#home-page-hero-section {
   background-color: $color-primary;
   color: $white;
 }
 
 // Features Section
-#features-section {
+#home-page-features-section {
   background-color: $white;
   //text-align: center;
 
-  .code-wrapper{
+  .code-wrapper {
     max-width: 350px;
     //margin: 0 auto;
   }
 
-  .code{
+  .code {
     background-color: $gray-dark-2;
     color: white;
     border-radius: 5px;
   }
 
-  .code-text-a{
+  .code-text-a {
     color: $color-primary;
   }
 
-  .code-text-b{
+  .code-text-b {
     color: $color-accent
   }
 
   .framework-icon {
     height: 64px;
-    width:  64px;
+    width: 64px;
     margin: 0 .5rem;
   }
 
-  .browser-icon{
+  .browser-icon {
     height: 64px;
-    width:  64px;
+    width: 64px;
     margin: 0 .5rem;
   }
 
 }
 
 // Registration section
-#register-section {
+#home-page-register-section {
   background-color: $gray-light-4;
 }
 
@@ -201,6 +201,39 @@ $scale: (
 
 #register-message-input {
 
+}
+
+// Company section
+#about-page-company-section {
+  background-color: $gray-light-3;
+  color: black;
+}
+
+#about-page-founders-section {
+  background-color: white;
+}
+
+#about-page-team-section {
+  background-color: white;
+}
+
+#about-page-hiring-section{
+  background-color: $gray-light-4;
+  color: black;
+}
+
+.avatar{
+
+  height: 128px;
+  width: 128px;
+
+  background-color: $gray-light-4;
+  border: 4px solid $color-primary-dark;
+
+}
+
+.avatar--question{
+  padding: 16px;
 }
 
 // Footer section

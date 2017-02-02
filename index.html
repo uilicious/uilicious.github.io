@@ -22,17 +22,17 @@
 
     <header class="site-header">
         <nav class="site-navbar navbar navbar-toggleable-md navbar-inverse bg-inverse">
-            <a href="#" class="navbar-brand">
+            <a href="index.html#" class="navbar-brand">
                 <img src="assets/img/logo/logo_122x32_inverse.png" height="32" width="122"/>
             </a>
             <div class="collapse navbar-collapse justify-content-between">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="#features-section">Features</a>
-                    <a class="nav-item nav-link" href="#">Documentation</a>
+                    <a class="nav-item nav-link active" href="index.html#home-page-features-section">Features</a>
+                    <!--<a class="nav-item nav-link" href="docs.html">Documentation</a>-->
                     <a class="nav-item nav-link" href="https://blog.uilicious.com">Blog</a>
                 </div>
                 <div class="navbar-nav">
-                    <a class="btn btn-outline-primary" href="#register-section">
+                    <a class="btn btn-outline-primary" href="index.html#home-page-register-section">
                         Sign up
                     </a>
                 </div>
@@ -42,15 +42,16 @@
 
     <div class="site-content">
 
-        <article>
+        <article id="home-article">
 
             <!-- hero -->
-            <section id="hero-section" class="jumbotron jumbotron-fluid mb-0">
+            <section id="home-page-hero-section" class="jumbotron jumbotron-fluid mb-0">
                 <div class="container ">
                     <div class="d-flex flex-column align-items-center">
 
                         <div>
-                            <img class="img-fluid" src="assets/img/logo/logo_687x316_inverse.png" height="316" width="687"/>
+                            <img class="img-fluid" src="assets/img/logo/logo_687x316_inverse.png" height="316"
+                                 width="687"/>
                         </div>
                         <h3 class="mb-m">
                             Fast and robust UI testing for the modern web
@@ -60,7 +61,7 @@
             </section>
 
             <!-- features -->
-            <section id="features-section" class="container-fluid py-l">
+            <section id="home-page-features-section" class="container-fluid py-l">
                 <div class="container">
 
                     <!-- Write -->
@@ -212,7 +213,7 @@ I.<span class="code-text-b">see</span>(<span class="code-text-a">"cheezburger"</
             </section>
 
             <!-- sign up -->
-            <section id="register-section" class="container-fluid">
+            <section id="home-page-register-section" class="container-fluid">
                 <div class="container py-l">
                     <div class="row">
                         <div class="col-sm-12 col-lg-8 offset-lg-2">
@@ -237,20 +238,20 @@ I.<span class="code-text-b">see</span>(<span class="code-text-a">"cheezburger"</
                             <form id="register-form" action="https://formspree.io/hello@uilicious.com" method="post">
                                 <div class="form-group">
                                     <label for="register-name-input" class="form-control-label">Name</label>
-                                    <input id="register-name-input" type="text" class="form-control" required/>
+                                    <input id="register-name-input" type="text" name="name" class="form-control" required/>
                                 </div>
                                 <div class="form-group">
                                     <label for="register-email-input" class="form-control-label">Email</label>
-                                    <input id="register-email-input" type="email" class="form-control" required/>
+                                    <input id="register-email-input" type="email" name="email" class="form-control" required/>
                                 </div>
                                 <div class="form-group">
                                     <label for="register-phone-input" class="form-control-label">Contact Number</label>
-                                    <input id="register-phone-input" type="number" class="form-control" required/>
+                                    <input id="register-phone-input" type="number" name="phone" class="form-control" required/>
                                 </div>
                                 <div class="form-group">
                                     <label for="register-message-input" class="form-control-label">Tell us about
                                         yourself and your work</label>
-                                    <textarea id="register-message-input" type="text" class="form-control"
+                                    <textarea id="register-message-input" type="text" name="message" class="form-control"
                                               required></textarea>
                                 </div>
                                 <button type="submit" class="btn btn-primary">
@@ -275,10 +276,10 @@ I.<span class="code-text-b">see</span>(<span class="code-text-a">"cheezburger"</
                                     <img src="assets/img/logo/logo_122x32_inverse.png" height="24" width="92"/>
                                 </div>
                                 <div class="mb-xxs">
-                                    <a href="#">About the company</a>
+                                    <a href="about.html#about-page-company-section">About the company</a>
                                 </div>
                                 <div class="mb-xxs">
-                                    <a href="#">Our Team</a>
+                                    <a href="about.html#about-page-team-section">Our Team</a>
                                 </div>
                             </div>
                             <div class="mb-m">
@@ -296,7 +297,7 @@ I.<span class="code-text-b">see</span>(<span class="code-text-a">"cheezburger"</
                             <div class="mb-m">
                                 <h4 class="mb-s">News</h4>
                                 <a class="twitter-timeline" href="https://twitter.com/ui_licious" data-height="500">Tweets
-                                    by ui_licious</a>
+                                    by @ui_licious</a>
                                 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
                             </div>
                         </div>
@@ -317,9 +318,13 @@ I.<span class="code-text-b">see</span>(<span class="code-text-a">"cheezburger"</
                                 <p>
                                     Drop us your resume at <a class="text-highlight" href="mailto:hello@uilicious.com">hello@uilicious.com</a>.
                                 </p>
-                                <p>
-                                    <a href="#" class="text-underline--dotted">Why work with us?</a>
-                                </p>
+                                <!--<p>-->
+                                <!--<a href="career.html" class="text-underline&#45;&#45;dotted">Why work with us?</a>-->
+                                <!--</p>-->
+                            </div>
+                            <div class="mb-m">
+                                <h4 class="mb-s">Drop us a message</h4>
+                                <span><i class="fa fa-envelope"></i> <a href="mailto:hello@uilicious.com">hello@uilicious.com</a></span>
                             </div>
                         </div>
                     </div>
@@ -350,6 +355,23 @@ I.<span class="code-text-b">see</span>(<span class="code-text-a">"cheezburger"</
 <script src="assets/vendor/jquery-3.1.1/dist/jquery-3.1.1.slim.min.js"></script>
 <script src="assets/vendor/tether-1.3.3/dist/js/tether.min.js"></script>
 <script src="assets/vendor/bootstrap-4.0.0-alpha.6/dist/js/bootstrap.min.js"></script>
+
+<!-- Google Analytics -->
+<script>
+	(function (i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r;
+		i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+		a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0];
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m)
+	})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+	ga('create', 'UA-85473608-1', 'auto');
+	ga('send', 'pageview');
+</script>
 
 </body>
 </html>
