@@ -347,8 +347,10 @@ a {
   flex: 1;
   overflow-y: auto; }
 
-.site-navbar {
+#site-navbar {
   background-color: #2D3332; }
+  #site-navbar .navbar-toggler i {
+    font-size: 2rem; }
 
 #home-page-hero-section {
   background-color: #40D1B1;

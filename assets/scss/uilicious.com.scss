@@ -133,8 +133,13 @@ $scale: (
 }
 
 // Site navbar
-.site-navbar {
+#site-navbar {
   background-color: $navbar-background-color;
+
+  .navbar-toggler i{
+    font-size: 2rem;
+  }
+
 }
 
 // Sections
